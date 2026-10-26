@@ -1,0 +1,8 @@
+[
+  {"args":["jsonl_byte_shards.py","--help"],"exit":0},
+  {"args":["examples/demo.py","roundtrip"],"exit":0},
+  {"args":["examples/demo.py","tamper"],"exit":1},
+  {"args":["examples/demo.py","occupied"],"exit":2},
+  {"args":["jsonl_byte_shards.py","split","examples/duplicate-key.jsonl","--out-dir","invalid-parts","--part-bytes","100"],"exit":2},
+  {"args":["jsonl_byte_shards.py","split","examples/sample.jsonl","--out-dir","invalid-parts","--part-bytes","0"],"exit":2}
+]
